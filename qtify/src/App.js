@@ -1,6 +1,6 @@
-import React, { use, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyledEngineProvider } from '@mui/material/styles';
-import { Outlet, outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 import { fetchFilters, fetchNewAlbums, fetchSongs, fetchTopAlbums } from './Component/api';
 import './App.css';
 import Hero from './Component/Hero';
