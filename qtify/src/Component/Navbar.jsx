@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../Button/Button";
-import Search from "../Search/Search";
+import Button from "./Button";
+import Search from "./Search";
 import styles from './Navbar.module.css'
 import LogoImage from "../assets/logo.png"
 

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styles from "./Section.module.css";
-import Card from "../Card/Card";
+import Card from "./Card";
 import { CircularProgress } from "@mui/material";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "./CarouselComponent/Carousel";
 
 const Section = ({ title, data, type }) => {
   const [carouselToggle, setCarouselToggle] = useState(true);

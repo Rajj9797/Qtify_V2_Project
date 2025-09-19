@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import 'swiper/css'
 import {Navigation} from 'swiper/modules'
-import {Swiper,useSwiper,SwiperSlide} from 'swiper/react'
+import { Swiper,useSwiper,SwiperSlide } from 'swiper/react'
 import styles from './Carousel.module.css'
-import CarouselLeft from './CarouselLeft' 
-import CarouselRight from './CarouselRight'
+import CarouselLeft from '../CarouselComponent/CarouselLeft' 
+import CarouselRight from '../CarouselComponent/CaurouselRight'
 
 
 const Controls = ({data}) => {
