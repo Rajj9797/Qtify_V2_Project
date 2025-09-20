@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Component/Navbar.jsx'
 import Hero from './Component/Hero.jsx'
-import styles from './App.css'
+import styles from './App.module.css'
 import { useEffect, useState } from 'react'
 import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from './Component/api.jsx'
 import Section from './Component/Section.jsx'
-import FilterSection from './Component/Filters.jsx'
+import FilterSection from './Component/FilterSection.jsx'
 
 function App() {
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styles from './FilterSection.module.css'
 import { Box, CircularProgress } from '@mui/material'
-import Card from "../Card/Card";
+import Card from "./Card";
 import Carousel from "./CarouselComponent/Carousel";
 import BasicTabs from './BasicTab';
 

@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #121212;
+  color: #ffffff;
   /* width: 100vh; */
 }
 .HeroTitle {
@@ -13,6 +15,7 @@
   line-height: 48px;
   font-weight: 600;
   margin: 20px;
+  margin-bottom: 0px;
 }
 .HeroTitle > h1{
     height: 48px;
