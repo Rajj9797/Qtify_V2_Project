@@ -28,19 +28,18 @@ const Section = ({ title, data, type }) => {
       {data.length === 0 ? (
         <>
           <CircularProgress />
-          console.log('Section data:', data);
         </>
         
       ) : (
         <div className={styles.cardWrapper}>
-          {!carouselToggle ? (
+          {(!carouselToggle) ? (
             <div className={styles.wrapper}>
                 {data.map((card) => (
                 <Card data={card} type={type} key={card.id} />        
                 ))}
             </div>
           ) : (
-            <Carousel data={data} renderCardComponent={(data) => <Card data={data} type={type} key={data.id}/>}/>
+            <Carousel data={data} renderCardComponent={(data) => <Card data={data} type={type}/>}/>
           )}
         </div>
         // <>
