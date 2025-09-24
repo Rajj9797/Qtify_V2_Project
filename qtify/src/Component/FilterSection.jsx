@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import styles from './FilterSection.module.css'
 import { Box, CircularProgress } from '@mui/material'
 import Card from "./Card";

@@ -10,43 +10,29 @@ const Section = ({ title, data, type }) => {
   const handleToggle = () => {
     setCarouselToggle(!carouselToggle);
   };
-
-  console.log("data",data);
-  console.log("type",type);
-  console.log("title",title);
-  console.log("data.length",data.length);
-  // console.log("carouselToggle",carouselToggle);
-
   return (
     <div>
       <div className={styles.header}>
         <h3>{title}</h3>
         <h4 className={styles.toggleText} onClick={handleToggle}>
-          {carouselToggle ? "Show All" : "Collapse All"}
+          {carouselToggle ? "Show All" : "Collapse All"};
         </h4>
       </div>
       {data.length === 0 ? (
-        <>
-          <CircularProgress />
-        </>
-        
+        <CircularProgress />
       ) : (
         <div className={styles.cardWrapper}>
-          {(!carouselToggle) ? (
+          {!carouselToggle ? (
             <div className={styles.wrapper}>
                 {data.map((card) => (
-                <Card data={card} type={type} key={card.id} />        
+                <Card data={card} type={type} key={card.id} />
                 ))}
             </div>
           ) : (
             <Carousel data={data} renderCardComponent={(data) => <Card data={data} type={type}/>}/>
           )}
         </div>
-        // <>
-        //   console.log("carouselToggle",carouselToggle);
-        // </>
       )}
-      
     </div>
   );
 };
